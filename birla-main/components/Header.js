@@ -19,6 +19,9 @@ const Header = () => {
         source={require('../assets/images/noti.png')}/>
         
 
+
+
+
       </View>
     );
   };
@@ -28,20 +31,22 @@ const Header = () => {
 
   const styles = StyleSheet.create({
     container: {
-      width:500,
-      height: 90,
-      backgroundColor: 'white',
-      paddingBottom:20,
-      alignItems:"center",
+      backgroundColor:"aqua",
       flexDirection:"row",
-      justifyContent:"space-around",
+      // paddingVertical:30,
+      justifyContent:'space-between',
+      alignItems:'center',
+borderBottom:"3px solid gray"
 
       
 
     },
     labelStyle: {
-
-
+// backgroundColor:"red",
+    marginLeft:30,
+    // marginVertical:30,
+marginTop:50,
+marginBottom:20
         // marginLeft:30,
         // padding:30,
         
@@ -49,8 +54,11 @@ const Header = () => {
     labelStyle1:{
       // alignItems:'right',
       // margin:30
-      
-      
+      // backgroundColor:"yellow"
+marginRight:30,  
+marginTop:30,    
+// width:40,
+// height:40
     }
 });
 

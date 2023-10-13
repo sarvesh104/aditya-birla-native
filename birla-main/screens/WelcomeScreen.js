@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image } from 'react-native';
 import Header from "../components/Header";
+import Type from '../components/TypeTab';
 
 const Home = () => {
   return (
@@ -8,7 +9,7 @@ const Home = () => {
 
 <Header />
 
-
+<Type />
 
       <Text style={{color:"red"}}>hii sarvesh</Text>
       {/* <StatusBar style="auto" /> */}
