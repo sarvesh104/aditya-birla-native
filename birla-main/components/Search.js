@@ -6,7 +6,7 @@ const SearchBar = () => {
   return (
 
 <>
-    <View style={{backgroundColor:"yellow",flexDirection:"row"}}>
+    <View style={{flexDirection:"row"}}>
     <View style={styles.container}>
       <View style={styles.searchBar}>
         <FontAwesome name="search" size={24} color="gray" style={styles.searchIcon} />
@@ -37,8 +37,8 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: "row",
     alignItems: "center",
-    backgroundColor: "#f0f0f0",
-    borderRadius: 5,
+    backgroundColor: "#ffffff",
+    borderRadius: 6,
     paddingHorizontal: 10,
     width:280,
     marginLeft:20, marginVertical:10
@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
     marginLeft: 15, // Adjust the spacing as needed
   },
   menuIcon: {
-    fontSize: 24,
+    fontSize: 30,
     color: "gray",
     marginTop:20
   },
