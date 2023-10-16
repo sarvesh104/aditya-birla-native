@@ -1,13 +1,13 @@
 import React from "react";
 import { View, Text, Image, TouchableOpacity, StyleSheet } from "react-native";
 
-const BuilderCard = () => {
+const BuilderCard = (props) => {
   return (
     <>
     <TouchableOpacity style={styles.card}>
-      <View style={{backgroundColor:"yellow",resizeMode:'contain',}}>
+      <View style={{resizeMode:'contain',}}>
         <Image
-          source={require("../assets/images/card.png")}
+          source={props.img}
           style={styles.image}
         />
       </View>
@@ -37,25 +37,25 @@ const BuilderCard = () => {
           {/* Add your icon components here */}
           <TouchableOpacity>
             <Image
-              source={require("../assets/images/noti.png")}
+              source={require("../assets/images/gym.png")}
               style={styles.icon}
             />
           </TouchableOpacity>
           <TouchableOpacity>
             <Image
-              source={require("../assets/images/noti.png")}
+              source={require("../assets/images/dinner.png")}
               style={styles.icon}
             />
           </TouchableOpacity>
           <TouchableOpacity>
             <Image
-              source={require("../assets/images/noti.png")}
+              source={require("../assets/images/car.png")}
               style={styles.icon}
             />
           </TouchableOpacity>
           <TouchableOpacity>
             <Image
-              source={require("../assets/images/noti.png")}
+              source={require("../assets/images/glass.png")}
               style={styles.icon}
             />
           </TouchableOpacity>
@@ -74,6 +74,7 @@ const styles = StyleSheet.create({
     margin: 15,
     borderRadius: 10,
     overflow: "hidden",
+    // marginBottom
   },
   image: {
     marginVertical:10,
@@ -115,7 +116,7 @@ const styles = StyleSheet.create({
   },
   detailItem: {
     flexDirection: "row",
-    backgroundColor:"yellow",
+    backgroundColor:"#FBF8F0",
     paddingHorizontal:10,
     borderRadius:15,
     width:178,alignItems:"center"
@@ -123,7 +124,7 @@ const styles = StyleSheet.create({
   },
   detailItem2: {
     flexDirection: "row",
-    backgroundColor:"pink",
+    backgroundColor:"#FBF8F0",
     paddingHorizontal:6,
     width:128,
     marginHorizontal:5,

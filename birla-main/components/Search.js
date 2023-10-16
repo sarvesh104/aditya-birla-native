@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, TextInput, TouchableOpacity, StyleSheet } from "react-native";
+import { View, Text, TextInput, TouchableOpacity, StyleSheet ,Image} from "react-native";
 import { FontAwesome } from '@expo/vector-icons';
 
 const SearchBar = () => {
@@ -21,7 +21,7 @@ const SearchBar = () => {
 
     <View style={styles.menuContainer}>
       <TouchableOpacity onPress={() => handleMenuClick()}>
-        <FontAwesome name="bars" size={24} color="gray" style={styles.menuIcon} />
+        <Image source={require('../assets/images/menu.png')}  style={styles.menuIcon} />
       </TouchableOpacity>
     </View>
 
@@ -60,9 +60,9 @@ const styles = StyleSheet.create({
     marginLeft: 15, // Adjust the spacing as needed
   },
   menuIcon: {
-    fontSize: 30,
-    color: "gray",
-    marginTop:20
+width:30,
+height:24,
+    marginTop:22
   },
 });
 
